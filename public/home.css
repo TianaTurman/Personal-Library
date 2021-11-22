@@ -1,0 +1,109 @@
+body{
+    background-color: rgb(176, 218, 203);
+}
+.Libraryheading{
+    background-image: url(Books/pexels-marta-dzedyshko-2067569.jpg);
+    background-size: 100%;
+    background-position-y: 45%;
+    background-repeat: no-repeat;
+    box-shadow:  0 10px 30px rgb(61, 61, 61);
+    height:720px;
+    
+}
+
+
+.container{
+    position: absolute;
+    margin:0 auto;
+    bottom: 61; 
+   
+    padding: 25px;
+    width: 0;
+	
+	border-right: 1000px solid transparent; 
+    border-bottom: 720px solid rgba(5, 4, 4, 0.705);
+    
+    left:8;
+    
+}
+.container2{
+    position: absolute;
+    right: 8;
+    top: 7; 
+    width: 0;
+	/* height: 5px; */
+	border-left:   2300px solid transparent;
+	border-right: 890px solid rgba(184, 89, 121, 0.59);
+    border-bottom: 640px solid transparent;
+   
+
+    
+ 
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: right;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: green;
+    font-size: 19px;
+    background-color: rgb(240, 76, 103);
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    
+    color: rgb(147, 236, 147);
+    background-color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+/* a{
+    position:absolute;
+     z-index:2;
+    color: green;
+    text-decoration-line: none;
+    font-size:25px;
+    
+    
+} */
+/* .topnav{
+    float:right;
+} */
+
+
+.title{
+    position:absolute;
+    z-index:1;
+    /* text-shadow: 1px 1px 5px rgb(3, 104, 129); */
+  color: rgb(7, 5, 2);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* text-align: left; */
+  font-size:50px;
+  background-color:rgba(176, 218, 203, 0.705);
+  text-align: center;
+  border-bottom: 10px solid black;
+  box-shadow:  0 10px 30px rgb(61, 61, 61);
+  
+  
+
+}
+

@@ -1,0 +1,54 @@
+html
+  head
+    title My Personal Library
+    meta(name='description', content='A cool thing made with Glitch')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/public/profile.css')
+    link(rel="stylesheet" type="text/css" href="w3style.css")
+    script(src='/public/client.js')
+
+  body
+    div.navbar 
+        a(href='/') home
+
+    div.LibraryHeading 
+        div.triangle
+        h1.title The Books I Love
+
+    div.picture1.row 
+        div.column 
+            img(src="public/Books/imgedit.jpg", alt="")
+       
+    div.container2
+        section.form
+            div.bookname
+                p Add Book 
+                form(action='/api/books', method='post')
+                    div
+                    input(id='bookTitle',type='text', name='bookTitle',placeholder='Book Title')
+                    div
+                    input(type='submit', value='New Book')
+
+            div.addcomment    
+                p Add a comment
+                form(action='/api/books/comment', method='post')
+                    div
+                    input(id='bookid',type='text', name='bookid' placeholder='book name')
+                    div
+                    input(id='comment',type='text', name='comment',placeholder='comment')
+                    div
+                    input(type='submit', value='Create Comment')
+                    
+        aside.comments
+            h1 Books And Comments
+            p#pug-variable= message
+            p#book-display
+            for book in books
+                h3 #{book.title}
+                p Comments: #{book.count}
+                    for comment in book.comments
+                        li #{comment} 
+                        a(href='/api/books/delete/' +book.id) delete 
+                             

@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(176, 218, 203);
+}
+
+/* image */
+.Libraryheading{
+    background-image: url(Books/pexels-marta-dzedyshko-2067569.jpg);
+    background-size: 100%;
+    background-position-y: 75%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    box-shadow:  0 10px 30px rgb(0, 0, 0);
+    height:420px;    
+}
+/* trasnparent triangle over top picture */
+.triangle{
+    position: absolute;
+    right: 8;
+    top: 75; 
+    width: 0;
+	/* height: 5px; */
+	border-left:   1000px solid transparent;
+	border-right: 850px solid rgba(5, 4, 4, 0.705);
+    border-bottom: 350px solid transparent;
+    overflow: hidden;
+   
+}
+.title{  
+  font-size:50px;
+  background-color:rgba(176, 218, 203, 0.705);
+  text-align: center;
+  border-bottom: 5px solid black;
+  box-shadow:  0 10px 30px rgb(2, 2, 2);
+  color:black;   
+}
+ 
+/* box containing forms */
+  .container2{
+      background-color: rgb(67, 66, 66);
+      margin:25px 0px 110px 5px;
+      padding:25px;
+      box-shadow:  0 10px 30px rgb(61, 61, 61);
+      z-index: 3;
+      width:900px;
+      height:600px;
+  }
+  
+ .form{
+      float: left;
+      text-align: center;
+      margin-left:50px;
+}
+
+  .bookname{
+    color:pink;
+    font-size:35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(132, 209, 181);
+
+  }
+
+  .addComment{
+    color:pink;
+    font-size:35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(132, 209, 181);
+    margin-bottom:25px;
+  }
+  .comments{
+      text-align: center;
+      width:400px;
+      height:590px;
+      float: right;
+      background-color: rgb(132, 209, 181);
+      box-shadow:  0 10px 30px rgb(61, 61, 61);
+      color:rgb(67, 66, 66);
+      
+  }
+
+ .picture1{
+      float:right;
+      margin:145px 25px 100px 25px;
+      box-shadow:  0 10px 30px rgb(61, 61, 61);
+}
+
+
+input{
+    height:50px;
+   margin:10px;
+   text-align: center;
+   font-size: 15px;
+}
+input[type=submit]{
+    /* display:inline; */
+    color:teal;
+     margin-bottom:10px;
+
+}
+
+input[type=submit]:hover{
+    background-color:black;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.465);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    margin-top:25px;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: right;
+    display:block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    background-color: rgb(240, 76, 103);
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    overflow: hidden;
+    color: rgb(147, 236, 147);
+    background-color: black;
+    text-decoration:underline rgb(147, 236, 147); 
+  }
+
+ .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+    overflow: hidden;
+  }
+
+  a{
+      color:rgb(67, 66, 66);
+  }
+  a:hover {
+    
+    color: rgb(7, 6, 6);
+    font-size:20px;
+    text-decoration:underline rgb(0, 0, 0); 
+  }
